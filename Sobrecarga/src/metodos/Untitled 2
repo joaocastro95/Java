@@ -1,0 +1,8 @@
+// Construtor 1 - Ordem: nome, profissão, idade, salário
+Ficha_funcionarios(String nome, String profissão, int idade, double salário)
+
+// Construtor 2 - Ordem: idade, salário, nome, profissão  
+Ficha_funcionarios(int idade, double salário, String nome, String profissão)
+
+// Construtor 3 - Recebe objeto como parâmetro
+Ficha_funcionarios(Ficha_funcionarios e)

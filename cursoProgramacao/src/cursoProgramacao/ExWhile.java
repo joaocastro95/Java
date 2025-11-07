@@ -1,0 +1,30 @@
+package cursoProgramacao;
+
+import java.util.Scanner;
+
+public class ExWhile {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Entre com um valor de X");
+		int x = sc.nextInt();
+		System.out.println("Entre com um valor de Y");
+		int y = sc.nextInt();
+
+		while (x != y) {
+			if (x < y) {
+				System.out.println("Crescente");
+			} 
+			else {
+				System.out.println("Decrescente");
+			}
+			x = sc.nextInt();
+			y = sc.nextInt();
+		}
+		
+		System.out.print("Fim do programa");
+		sc.close();
+	}
+
+}
