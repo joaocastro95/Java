@@ -1,0 +1,38 @@
+package cursoProgramacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ESTCOD3 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		
+		System.out.println("Vamos ver com número é menor");
+		System.out.println("Digite o valor de a: ");
+		double a = sc.nextDouble();
+		System.out.println("Digite o valor de b: ");
+		double b = sc.nextDouble();
+		System.out.println("Digite o valor de c: ");
+		double c = sc.nextDouble();
+		
+		if (a < b && a < c) {
+			System.out.println("MENOR = " + a);
+		}
+		else {
+			if (b < c) {
+				System.out.println("MENOR = " + b);
+			}
+			else {
+				System.out.println("Menor = " + c);
+			}
+		}
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Ex_listas.java&apos; to &apos;secao10.Ex_listas.java&apos;&#x0D;&#x0A;- Original project: &apos;secao10&apos;&#x0D;&#x0A;- Destination element: &apos;secao10.Ex_listas.java&apos;&#x0D;&#x0A;- Original element: &apos;secao10.Ex_listas.java&apos;" description="Copy compilation unit" destination="/src&lt;secao10{Ex_listas.java" element1="/src&lt;secao10{Ex_listas.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1722804415045" units="1" version="1.0"/>
+</session>

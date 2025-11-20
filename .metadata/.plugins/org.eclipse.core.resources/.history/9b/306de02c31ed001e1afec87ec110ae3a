@@ -1,0 +1,23 @@
+package cursoProgramacao;
+
+import java.util.Scanner;
+
+public class Entradas {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		Int y;
+		System.out.println("Digite seu nome");
+		x = sc.next();
+		System.out.println("Agora digite sua idade");
+		y = sc.nextInt();
+		
+		System.out.println("Seu nome é:" + x + "Sua idade é: " + y);
+		
+		sc.close();
+
+	}
+
+}
