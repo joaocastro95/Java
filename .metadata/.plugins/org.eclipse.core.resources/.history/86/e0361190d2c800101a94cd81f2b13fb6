@@ -1,0 +1,23 @@
+package poli;
+
+public class Concessionária_Ford extends Oficina_Mecânica {
+
+	Oficina_Mecânica ford = new Oficina_Mecânica();
+	
+	public Concessionária_Ford(){
+		ford.set_marca("Volkswagen");
+        ford.set_modelo("Fusca");
+	}
+	
+	  public String pintura(){ 
+		   return "pintar metálica azul típica do fusca"; 
+		  } 
+		   
+	  public String funilaria(){ 
+		   return "Reforma do capô do fusca"; 
+		  } 
+		   
+	  public String elétrica(){ 
+		   return "instala sistema elétrico do fusca"; 
+		  } 
+}

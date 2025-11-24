@@ -1,0 +1,10 @@
+package Cinemas;
+
+public class Cinemas_Antigos extends Cinemas_de_Santos {
+	private String nome_do_cinema;
+	
+	Cinemas_Antigos(String antigo){
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package Cinemas;
+
+public class Cine_Praiamar extends Cinemas_do_Shopping {
+	
+	Cine_Praiamar(String moderno){
+		super(moderno);
+		
+	}
+}

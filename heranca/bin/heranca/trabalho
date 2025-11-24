@@ -1,0 +1,134 @@
+🧩 1–4. Criação e execução do projeto
+
+Você já fez tudo isso corretamente:
+
+Criou o pacote heranca;
+
+Criou as classes: Contribuinte, PessoaFisica, PessoaJuridica, Funcionario e UsaFuncionario;
+
+Compilou e executou no Eclipse.
+
+
+| Tipo                             | Classe                            | Observação                                                               |
+| -------------------------------- | --------------------------------- | ------------------------------------------------------------------------ |
+| **Superclasse**                  | `Contribuinte`                    | Contém o atributo comum `nome` e seus métodos `setNome()` / `getNome()`. |
+| **Subclasses**                   | `PessoaFisica` e `PessoaJuridica` | Herdam de `Contribuinte`.                                                |
+| **Classe derivada da subclasse** | `Funcionario`                     | Herda de `PessoaFisica`, portanto também herda tudo de `Contribuinte`.   |
+
+
+🔒 6. Tipos de encapsulamento (qualificadores) dos atributos
+
+No seu código, todos os atributos estão como:
+private String nome;
+
+🔹 O modificador private indica encapsulamento total — o atributo só pode ser acessado pelos métodos da própria classe.
+Isso protege os dados e obriga o uso de getters e setters.
+
+
+⚙️ 7. Tipos de qualificadores dos métodos
+
+Os métodos estão com o modificador:
+
+public void setNome(String nome)
+public String getNome()
+
+
+🔹 O qualificativo public permite que os métodos sejam acessados de fora da classe, inclusive por outras classes do pacote.
+
+
+
+🧮 8. Formato dos métodos get() e set()
+Tipo	Exemplo	Retorno	Argumento	Função
+Getter	public String getNome()	Retorna o valor do atributo	Nenhum	Permite ler o valor
+Setter	public void setNome(String nome)	Nenhum (void)	Recebe o valor a ser atribuído	Permite alterar o valor
+
+👉 O padrão é:
+
+getAtributo() → retorna o valor  
+setAtributo(valor) → define o valor
+
+
+🧭 9. Operador this
+
+Usado para se referir ao atributo da própria classe, evitando ambiguidade entre parâmetro e atributo.
+
+Exemplo:
+
+public void setNome(String nome) {
+    this.nome = nome;
+}
+
+
+➡️ Aqui, this.nome é o atributo da classe, enquanto nome é o parâmetro do método.
+
+
+
+📦 10. Significado e funcionalidade de package
+
+package = pacote
+Serve para organizar classes em grupos lógicos dentro do projeto.
+
+package heranca;
+
+
+➡️ Significa que todas as classes pertencem ao pacote heranca, ajudando na estruturação e evitando conflitos de nomes.
+
+📘 11. Significado de UML
+
+UML (Unified Modeling Language) = Linguagem de Modelagem Unificada
+Usada para representar graficamente a estrutura e comportamento de sistemas orientados a objetos (classes, herança, relacionamentos etc.).
+
+
+
+🧩 12. Primeiro campo na UML
+
+Na representação UML, o primeiro campo contém o nome da classe.
+📌 Formato:
+
+NomeDaClasse
+
+
+Exemplo:
+
+Contribuinte
+
+🔑 13. Segundo campo na UML
+
+O segundo campo contém os atributos da classe.
+📌 Formato:
+
+- nome: String
+
+
+Onde:
+
+- = privado (private)
+
+nome = nome do atributo
+
+String = tipo do dado
+
+⚙️ 14. Terceiro campo na UML
+
+O terceiro campo contém os métodos da classe.
+📌 Formato:
+
++ setNome(nome: String): void
++ getNome(): String
+
+
+Onde:
+
++ = público (public)
+
+o que está antes dos parênteses = nome do método
+
+dentro dos parênteses = parâmetro(s)
+
+depois dos dois pontos = tipo de retorno
+
+➕ 15. Significado dos sinais (+ e –)
+Símbolo	Significado	Modificador Java
++	Público	public
+-	Privado	private
+#	Protegido	protected

@@ -1,0 +1,61 @@
+package tratamento_erros;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import javax.swing.JButton;
+import javax.swing.JTextArea;
+
+public class Excecao_2 implements ActionListener {
+
+    JButton B1, B2, B3;
+    JTextArea TA1;
+
+    @Override
+    public void actionPerformed(ActionEvent e)
+    {
+        String arquivo = "c:/arq1.txt";
+
+        // LIMPAR
+        if (e.getSource() == B3) {
+            TA1.setText("");
+        }
+
+        // GRAVAR
+        if (e.getSource() == B1)
+        {
+            try
+            {
+                String S = TA1.getText();      // pega o texto do TA1
+                byte b[] = S.getBytes();       // transforma em bytes
+                FileOutputStream grava = new FileOutputStream(arquivo); 
+                grava.write(b);                // grava os bytes no arquivo
+                grava.close();                 // fecha o arquivo
+            }
+            catch (IOException ex)
+            {
+                System.out.println("erro para gravar");
+            }
+        }
+
+        // LER
+        if (e.getSource() == B2)
+        {
+            try
+            {
+                FileInputStream ler = new FileInputStream(arquivo);
+                byte bt[] = new byte[10240];   // cria buffer de leitura
+                ler.read(bt);                  // lê o arquivo para o array
+                String S = new String(bt);     // converte bytes → string
+                TA1.setText(S);                // mostra no TA1
+                ler.close();                   // fecha o arquivo
+            }
+            catch (IOException ex)
+            {
+                System.out.println("erro para ler");
+            }
+        }
+    }
+}

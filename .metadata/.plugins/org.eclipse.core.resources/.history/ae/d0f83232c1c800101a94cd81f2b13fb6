@@ -1,0 +1,11 @@
+package Cinemas;
+
+public class Consulta_Cinemas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cine_Roxy roxy = new Cine_Roxy();
+
+	}
+
+}

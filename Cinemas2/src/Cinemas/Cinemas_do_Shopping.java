@@ -1,0 +1,30 @@
+package Cinemas;
+
+public class Cinemas_do_Shopping extends Cinemas_de_Santos{
+	private String shopping;
+	private int quantidadeSalas;
+	
+    Cinemas_do_Shopping() {
+    }
+    
+	Cinemas_do_Shopping(String moderno){
+		System.out.println("Shoppings modernos\n" + moderno);
+	}
+	
+    public void setShopping(String shopping) {
+        this.shopping = shopping;
+    }
+
+    public String getShopping() {
+        return shopping;
+    }
+
+    public void setQuantidadeSalas(int quantidadeSalas) {
+        this.quantidadeSalas = quantidadeSalas;
+    }
+
+    public int getQuantidadeSalas() {
+        return quantidadeSalas;
+    }
+
+}

@@ -1,0 +1,23 @@
+package poli;
+
+public class Concessionária_Ford extends Oficina_Mecânica {
+
+	Oficina_Mecânica ford = new Oficina_Mecânica();
+	
+	public Concessionária_Ford(){
+		ford.set_marca("Ford");
+        ford.set_modelo("Belina");
+	}
+	
+	  public String pintura(){ 
+		   return "pintar original bege"; 
+		  } 
+		   
+	  public String funilaria(){ 
+		   return "Reparo na traseira quadrada"; 
+		  } 
+		   
+	  public String elétrica(){ 
+		   return "Revisão completa de fiação"; 
+		  } 
+}

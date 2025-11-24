@@ -1,0 +1,5 @@
+package tratamento_erros;
+
+public class Herança_2 extendes Herança_1{
+
+}

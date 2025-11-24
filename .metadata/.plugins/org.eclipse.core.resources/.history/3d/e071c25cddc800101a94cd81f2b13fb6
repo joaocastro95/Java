@@ -1,0 +1,22 @@
+package Figura;
+
+public class Figuras {
+	private double lado_a;
+	private double lado_b;
+	private double lado_c;
+	private double area;
+	
+	Figuras (String mensagem){
+		lado_a = 2.0;
+		lado_b = 3.0;
+		lado_c = 1.0;
+		
+		System.out.println("---- Criando figura ----");
+		System.out.println(mensagem);
+	}
+	
+	public double dimensao() {
+		return 0.0;
+	}
+
+}

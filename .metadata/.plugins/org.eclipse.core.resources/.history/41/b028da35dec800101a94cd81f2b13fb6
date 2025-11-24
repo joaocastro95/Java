@@ -1,0 +1,27 @@
+package Figura;
+
+public class Figuras {
+    private double lado_a;
+    private double lado_b;
+    private double lado_c;
+
+    Figuras(String mensagem) {
+        System.out.println("---- Criando figura ----");
+        System.out.println(mensagem);
+    }
+
+    // GETTERS
+    public double getLadoA() { return lado_a; }
+    public double getLadoB() { return lado_b; }
+    public double getLadoC() { return lado_c; }
+
+    // SETTERS
+    public void setLadoA(double lado_a) { this.lado_a = lado_a; }
+    public void setLadoB(double lado_b) { this.lado_b = lado_b; }
+    public void setLadoC(double lado_c) { this.lado_c = lado_c; }
+
+    // MÉTODO POLIMÓRFICO
+    public double dimensao() {
+        return 0.0;  // será sobrescrito pelas filhas
+    }
+}

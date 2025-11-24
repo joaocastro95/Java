@@ -1,0 +1,17 @@
+package metodos;
+
+public class Calcula_areas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Figuras_geometricas f = new Figuras_geometricas();
+		System.out.println("Area do retângulo " + f.getArea(f.getLado_a(),f.getLado_b()));
+		System.out.println("Area do quadrado " + f.getArea());
+		f.setLado_a(4);
+		System.out.println("Area do retângulo " + f.getArea(f.getLado_a(),f.getLado_b()));
+		System.out.println("Area do quadrado " + f.getArea());
+
+	}
+
+}

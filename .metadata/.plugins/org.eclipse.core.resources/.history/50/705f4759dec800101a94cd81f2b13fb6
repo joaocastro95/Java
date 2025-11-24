@@ -1,0 +1,13 @@
+package Figura;
+
+public class Paralelepipedo extends Figuras {
+
+    public Paralelepipedo() {
+        super("dimensão(a, b, c) = a * b * c");
+    }
+
+    @Override
+    public double dimensao() {
+        return getLadoA() * getLadoB() * getLadoC();
+    }
+}

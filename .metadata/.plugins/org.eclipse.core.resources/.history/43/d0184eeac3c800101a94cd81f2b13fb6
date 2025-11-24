@@ -1,0 +1,6 @@
+package Cinemas;
+
+public class Cinemas_do_Shopping extends Cinemas_de_Santos{
+	
+
+}

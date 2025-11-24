@@ -1,0 +1,11 @@
+public class Quadrado extends Figuras {
+
+    public Quadrado() {
+        super("dimensão(a) = a * a");
+    }
+
+    @Override
+    public double dimensao() {
+        return getLadoA() * getLadoA();
+    }
+}

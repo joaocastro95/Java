@@ -1,0 +1,23 @@
+package metodos;
+
+public class Figuras_geometricas {
+	private double lado_a;
+	private static double lado_b;
+	private double lado_c;
+	private double area;
+	
+	Figuras_geometricas(){
+		lado_a = 2.0;
+		lado_b = 3.0;
+		lado_c = 1.0;
+	}
+	
+	public void setLado_a(double lado_a) {
+		this.lado_a = lado_a;
+	}
+	
+	public void setLado_b(double lado_b) {
+		this.lado_b = lado_b;
+	}
+
+}

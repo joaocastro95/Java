@@ -1,0 +1,13 @@
+package Figura;
+
+public class Retangulo extends Figuras {
+
+    public Retangulo() {
+        super("dimensão(a, b) = a * b");
+    }
+
+    @Override
+    public double dimensao() {
+        return getLadoA() * getLadoB();
+    }
+}

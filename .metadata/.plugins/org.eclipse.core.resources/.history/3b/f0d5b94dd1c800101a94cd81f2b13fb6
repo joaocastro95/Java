@@ -1,0 +1,16 @@
+package poli;
+
+public class Concessionária_Volks {
+
+	  public String pintura(){ 
+		   return "pintar de verde"; 
+		  } 
+		   
+	  public String funilaria(){ 
+		   return "desamassar o teto"; 
+		  } 
+		   
+	  public String elétrica(){ 
+		   return "instala alarme"; 
+		  } 
+}

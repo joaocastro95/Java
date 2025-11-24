@@ -1,0 +1,7 @@
+package Abstrata_e_Interface_feira;
+
+public interface Fazer_feira {
+	
+	public void comprar_na_barraca();
+
+}

@@ -1,0 +1,18 @@
+package Abstrata_e_Interface_feira;
+
+public class Simula_Feira {
+    public static void main(String[] args) {
+
+        // Comprar frutas
+        Feira f1 = new Fruta();
+        f1.chama_comprar();
+
+        // Comprar verduras
+        Feira f2 = new Verdura();
+        f2.chama_comprar();
+
+        // Novo comportamento: Fiscalizar
+        Feira fiscal = new Fiscal_da_feira();
+        fiscal.chama_fiscalizar();
+    }
+}

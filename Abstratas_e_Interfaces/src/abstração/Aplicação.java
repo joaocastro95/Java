@@ -1,0 +1,11 @@
+package abstração;
+
+public class Aplicação {
+
+	public static void main(String[] args) {
+		Classe_Abstrata a = new Classe_Filha();
+		a.set_mensagem("Demonstrando Classe Abstrata");
+		a.mostra_mensagem();
+	}
+
+}

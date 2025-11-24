@@ -1,0 +1,12 @@
+package Figura;
+
+public class Retangulo extends Figuras {
+
+    Retangulo(String mensagem){
+        super(mensagem);
+    }
+
+    public double dimensao() {
+        return getLado_a() * getLado_b();
+    }
+}

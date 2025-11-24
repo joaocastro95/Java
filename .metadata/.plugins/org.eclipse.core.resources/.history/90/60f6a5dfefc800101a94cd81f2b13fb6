@@ -1,0 +1,11 @@
+package Interface;
+
+public class Sacolao {
+
+	public static void main(String[] args) {
+		Implementa_Interface a = new Implementa_Interface();
+		
+
+	}
+
+}

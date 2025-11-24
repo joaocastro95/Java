@@ -1,0 +1,30 @@
+package cursoProgramacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExeSintaxe {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Calculo de conta do telefone");
+		System.out.println("Quanto tempo utilizou esse mês?");
+		
+		double Min = sc.nextInt();
+		double plano = 50.0;
+		
+		if (Min >100) {
+			plano = plano + (Min-100)*2.0;
+			System.out.printf("Valor da conta = R$ %.2f%n", plano);
+		}
+		
+		else {
+			System.out.printf("Valor da conta = R$50");
+		
+	}
+		sc.close();	
+	}
+}

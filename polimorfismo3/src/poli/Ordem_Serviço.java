@@ -1,0 +1,29 @@
+package poli;
+
+public class Ordem_Serviço {
+
+    public void executarServico(Oficina_Mecânica veiculo, int opcao) {
+
+        System.out.println("===== ORDEM DE SERVIÇO =====");
+        System.out.println("Veículo: " + veiculo.get_marca() + " - " + veiculo.get_modelo());
+
+        switch (opcao) {
+            case 1:
+                System.out.println("Serviço: " + veiculo.pintura());
+                break;
+
+            case 2:
+                System.out.println("Serviço: " + veiculo.funilaria());
+                break;
+
+            case 3:
+                System.out.println("Serviço: " + veiculo.elétrica());
+                break;
+
+            default:
+                System.out.println("Serviço inválido!");
+        }
+
+        System.out.println("============================\n");
+    }
+}

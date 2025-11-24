@@ -1,0 +1,27 @@
+package Abstrata_e_Interface_feira;
+
+public abstract class Feira {
+
+    Fazer_feira comprar;
+    Fiscalizar fiscal;
+
+    public void set_fruta(Fazer_feira f) {
+        comprar = f;
+    }
+
+    public void set_verdura(Fazer_feira v) {
+        comprar = v;
+    }
+
+    public void set_fiscal(Fiscalizar fiscal) {
+        this.fiscal = fiscal;
+    }
+
+    public void chama_comprar() {
+        comprar.comprar_na_barraca();
+    }
+
+    public void chama_fiscalizar() {
+        fiscal.fiscalizar_feira();
+    }
+}

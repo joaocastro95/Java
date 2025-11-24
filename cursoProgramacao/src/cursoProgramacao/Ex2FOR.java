@@ -1,0 +1,27 @@
+package cursoProgramacao;
+
+import java.util.Scanner;
+
+public class Ex2FOR {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Escolha um número de 2 até 1000 para a tabuada");
+		int N = sc.nextInt();
+
+		if (N<=1000 && N>=2) {
+			
+		for (int i = 1; i <= 10; i++) {
+			int produto = i * N;
+			
+			System.out.println(i + " x " + N + "=" + produto);
+		}}
+		else {
+			System.out.println("não é possível calcular");
+		}
+
+		sc.close();
+	}
+}
+

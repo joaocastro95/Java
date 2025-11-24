@@ -1,0 +1,6 @@
+package Cinemas;
+
+public class Cine_Caiçara extends Cinemas_Antigos {
+	
+
+}
