@@ -1,0 +1,51 @@
+package view;
+
+import java.util.Scanner;
+import model.*;
+
+public class Principal {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("1-Adição | 2-Subtração | 3-Multiplicação | 4-Divisão");
+        int op = sc.nextInt();
+
+        System.out.print("Valor 1: ");
+        float v1 = sc.nextFloat();
+
+        System.out.print("Valor 2: ");
+        float v2 = sc.nextFloat();
+
+        Calculo calc = null; // 👈 UPCASTING base
+
+        switch (op) {
+            case 1:
+                calc = new Adicao();
+                break;
+            case 2:
+                calc = new Subtracao();
+                break;
+            case 3:
+                calc = new Multiplicacao();
+                break;
+            case 4:
+                calc = new Divisao();
+                break;
+        }
+
+        calc.setValor1(v1);
+        calc.setValor2(v2);
+        calc.calcular();
+
+        // 👇 DOWNCASTING (exemplo)
+        if (calc instanceof Divisao) {
+            Divisao d = (Divisao) calc;
+            System.out.println("Você escolheu divisão!");
+        }
+
+        System.out.println("Resultado: " + calc.getResultado());
+
+        sc.close();
+    }
+}

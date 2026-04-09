@@ -1,0 +1,56 @@
+package view;
+
+import java.util.Scanner;
+import business.*;
+
+public class Principal {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Escolha: 1-Carro | 2-Moto");
+        int op = sc.nextInt();
+
+        Veiculo v = null; // 👈 UPCASTING
+
+        if (op == 1) {
+            System.out.print("Modelo: ");
+            String modelo = sc.next();
+
+            System.out.print("Fabricante: ");
+            String fab = sc.next();
+
+            System.out.print("Ano: ");
+            int ano = sc.nextInt();
+
+            System.out.print("Portas: ");
+            int portas = sc.nextInt();
+
+            v = new Carro(modelo, fab, ano, portas);
+
+        } else {
+            v = new Moto("XJ6", "Yamaha", 2022);
+        }
+
+        // Simulação
+        v.acelerar();
+        System.out.println(v);
+
+        v.acelerar();
+        System.out.println(v);
+
+        v.desacelerar();
+        System.out.println(v);
+
+        v.parar();
+        System.out.println(v);
+
+        // 👇 DOWNCASTING
+        if (v instanceof Moto) {
+            Moto m = (Moto) v;
+            System.out.println("Descanso acionado: " + m.isDescansoAcionado());
+        }
+
+        sc.close();
+    }
+}

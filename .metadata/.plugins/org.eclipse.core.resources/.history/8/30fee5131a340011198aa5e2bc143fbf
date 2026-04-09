@@ -1,0 +1,25 @@
+package aularevisao;
+
+abstract class Figura implements ICalculo, IGrafico {
+}
+
+class QuadradoOver extends Figura {
+    private int lado;
+    
+    public void setLado(int lado) { this.lado = lado; }
+    
+    @Override
+    public void desenhar(Graphics g, int x, int y) {
+        g.drawRect(x, y, x + lado, y + lado);
+    }
+    
+    @Override
+    public float calcularArea() {
+        return lado * lado;
+    }
+    
+    @Override
+    public float calcularPerimetro() {
+        return (lado + lado) * 2;
+    }
+}

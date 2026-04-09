@@ -1,0 +1,37 @@
+package business;
+
+public class Moto extends Veiculo {
+
+    private boolean descansoAcionado = true;
+
+    public Moto(String modelo, String fabricante, int ano) {
+        super(modelo, fabricante, ano);
+    }
+
+    @Override
+    public void acelerar() {
+        if (velocidadeAtual < 180)
+            velocidadeAtual += 5;
+
+        descansoAcionado = false;
+    }
+
+    @Override
+    public void desacelerar() {
+        if (velocidadeAtual > 0)
+            velocidadeAtual -= 5;
+
+        if (velocidadeAtual == 0)
+            descansoAcionado = true;
+    }
+
+    @Override
+    public void parar() {
+        velocidadeAtual = 0;
+        descansoAcionado = true;
+    }
+
+    public boolean isDescansoAcionado() {
+        return descansoAcionado;
+    }
+}

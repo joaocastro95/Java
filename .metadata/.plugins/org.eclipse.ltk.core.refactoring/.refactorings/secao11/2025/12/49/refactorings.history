@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;data_hora.java&apos; to &apos;secao11/src/data_hora&apos;&#x0D;&#x0A;- Original project: &apos;secao11&apos;&#x0D;&#x0A;- Destination element: &apos;secao11/src/data_hora&apos;&#x0D;&#x0A;- Original element: &apos;secao11.data_hora.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;data_hora" element1="/src&lt;secao11{data_hora.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1764791091804" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,37 @@
+package business;
+
+public abstract class Veiculo {
+
+    private String modelo;
+    private String fabricante;
+    private int ano;
+    protected int velocidadeAtual;
+
+    public Veiculo(String modelo, String fabricante, int ano) {
+        this.modelo = modelo;
+        this.fabricante = fabricante;
+        this.ano = ano;
+    }
+
+    public void acelerar() {
+        if (velocidadeAtual < 180)
+            velocidadeAtual += 5;
+    }
+
+    public void desacelerar() {
+        if (velocidadeAtual > 0)
+            velocidadeAtual -= 5;
+    }
+
+    public void parar() {
+        velocidadeAtual = 0;
+    }
+
+    public String getModelo() { return modelo; }
+    public int getVelocidadeAtual() { return velocidadeAtual; }
+
+    @Override
+    public String toString() {
+        return modelo + " | Velocidade: " + velocidadeAtual + " km/h";
+    }
+}

@@ -1,0 +1,8 @@
+package aularevisao;
+
+import java.awt.Graphics;
+
+abstract class FiguraOver {
+    abstract void desenhar(Graphics g, int x, int y);
+    abstract float calcularArea();
+}
